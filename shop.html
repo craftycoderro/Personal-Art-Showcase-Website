@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+<header class="bg-white shadow">
+    <div class="py-6 container flex items-center justify-center">
+        <h1  class="font-serif font-bold text-6xl text-orange-400">Artsy</h1>
+    </div>
+</header>
+<div class="container mx-auto px-6 py-8">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6">Available Artworks</h1>
+    <!--Anime-->
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 cursor-pointer mb-6 name" >Anime</h2>
+        <div class="grid lg:grid-cols-4 gap-8 content">
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="zenitsu.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Zenitsu</h3>
+                    <p class="text-gray-600" id="price1">$25.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product2" src="collage.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Collage</h3>
+                    <p class="text-gray-600" id="price2">$28.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product3" src="trio.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Chibbi jjk trio</h3>
+                    <p class="text-gray-600" id="price3">$30.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="akaza.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Akaza</h3>
+                    <p class="text-gray-600" id="price4">$15.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="bakugo.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Bakugo</h3>
+                    <p class="text-gray-600" id="price1">$18.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="gojo2.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Gojo</h3>
+                    <p class="text-gray-600" id="price1">$20.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="grimjow.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Grimjow</h3>
+                    <p class="text-gray-600" id="price1">$12.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="gojo4.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Gojo</h3>
+                    <p class="text-gray-600" id="price1">$30.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="kenma.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Kenma</h3>
+                    <p class="text-gray-600" id="price1">$20.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="kenpachi.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Kenpachi</h3>
+                    <p class="text-gray-600" id="price1">$28.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="pen2.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Luffy</h3>
+                    <p class="text-gray-600" id="price1">$25.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="gojo6.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Gojo</h3>
+                    <p class="text-gray-600" id="price1">$24.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl"> 
+                <img class="par" id="product1" src="luffy.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg mt-4" id="prod-name1">Luffy</h3>
+                    <p class="text-gray-600" id="price1">$24.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent  add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!--Mandala-->
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 cursor-pointer mb-6 name" >Mandala</h2>
+        <div class="grid lg:grid-cols-4 gap-8 content">
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product1" src="mandala1.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name1">Lion Mandala</h3>
+                    <p class="text-gray-600" id="price1">$28.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product2" src="mandala2.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Ganpati</h3>
+                    <p class="text-gray-600" id="price2">$30.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product3" src="mandala3.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Girl</h3>
+                    <p class="text-gray-600" id="price3">$26.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="mandala4.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Peacock</h3>
+                    <p class="text-gray-600" id="price4">$15.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="mandala5.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Ganpati</h3>
+                    <p class="text-gray-600" id="price4">$30.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!--pen sketch-->
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 cursor-pointer mb-6 name" >Pen Sketch</h2>
+        <div class="grid lg:grid-cols-4 gap-8 content">
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product1" src="random.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name1">Couple Sketch</h3>
+                    <p class="text-gray-600" id="price1">$15.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product2" src="random2.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Boy</h3>
+                    <p class="text-gray-600" id="price2">$5.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product3" src="random3.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Girl</h3>
+                    <p class="text-gray-600" id="price3">$5.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="random5.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Landscape</h3>
+                    <p class="text-gray-600" id="price4">$20.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="random4.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Couple sketch</h3>
+                    <p class="text-gray-600" id="price4">$15.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="random7.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Mother and child</h3>
+                    <p class="text-gray-600" id="price4">$18.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    <!--craft-->
+    <div class="mb-6">
+        <h2 class="text-2xl font-bold text-gray-800 cursor-pointer mb-6 name" >Craft</h2>
+        <div class="grid lg:grid-cols-4 gap-8 content">
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product1" src="craft2.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name1">Ganpati</h3>
+                    <p class="text-gray-600" id="price1">$25.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product2" src="craft5.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Toran</h3>
+                    <p class="text-gray-600" id="price2">$28.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product3" src="trio.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Chibbi jjk trio</h3>
+                    <p class="text-gray-600" id="price3">$30.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-2xl">
+                <img class="par" id="product4" src="random.jpeg" alt="can't load"
+                    style="width: 300px; height:250px;">
+                <!-- <div class="p-4"> -->
+                    <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Couple sketch</h3>
+                    <p class="text-gray-600" id="price4">$15.00</p>
+                    <button class="px-3 text-white rounded-xl text-center sel-parent add-to-cart"
+                        style="background-color: #0a192f;">Add to cart</button>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('document').ready(function(){
+        $('.content').hide();
+    });
+
+    $('.name').click(function(){
+        $(this).next('.content').slideDown();
+    });
+
+    $('.add-to-cart').click(function(){
+        let item=$(this).parent().clone();
+        item.find('.add-to-cart').remove();
+        item.appendTo('body').css({
+            'position': 'fixed',
+                    'bottom': '10px',
+                    'right': '10px',
+                    'width': '240px',
+                    'z-index': '1000'
+        }).hide().fadeIn();
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--products-->
+    <!-- <section>
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl text-gray-800 font-bold mb-8" id="prod-name">Anime sketches</h3>
+            <div class="grid lg:grid-cols-4 gap-8" id="content">
+                <div class="bg-white shadow-md hover:shadow-2xl">
+                    <img class="par" id="product1" src="zenitsu.jpeg" alt="can't load"
+                        style="width: 300px; height:250px;">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800 text-lg" id="prod-name1">Zenitsu</h3>
+                        <p class="text-gray-600" id="price1">$25.00</p>
+                        <button class="px-3 text-white rounded-xl text-center sel-parent"
+                            style="background-color: #0a192f;">Add to cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md hover:shadow-2xl">
+                    <img class="par" id="product2" src="collage.jpeg" alt="can't load"
+                        style="width: 300px; height:250px;">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Collage</h3>
+                        <p class="text-gray-600" id="price2">$28.00</p>
+                        <button class="px-3 text-white rounded-xl text-center sel-parent"
+                            style="background-color: #0a192f;">Add to cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md hover:shadow-2xl">
+                    <img class="par" id="product3" src="trio.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Chibbi jjk trio</h3>
+                        <p class="text-gray-600" id="price3">$30.00</p>
+                        <button class="px-3 text-white rounded-xl text-center sel-parent"
+                            style="background-color: #0a192f;">Add to cart</button>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md hover:shadow-2xl">
+                    <img class="par" id="product4" src="random.jpeg" alt="can't load"
+                        style="width: 300px; height:250px;">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Couple sketch</h3>
+                        <p class="text-gray-600" id="price4">$15.00</p>
+                        <button class="px-3 text-white rounded-xl text-center sel-parent"
+                            style="background-color: #0a192f;">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function(){
+            $('content').hide();
+        });
+
+    </script> -->

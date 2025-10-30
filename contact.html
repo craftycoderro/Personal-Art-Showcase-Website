@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="flex items-center justify-center h-screen bg-pink-50">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <h1 class="text-2xl font-bold text-gray-800">Contact Us</h1>
+            <p class="text-gray-600">Have a question or want to commission artwork? Drop us a message!</p>
+            <form class="mt-4 space-y-4" id="myform">
+                <div>
+                    <label for="name" class="block text-gray-700">Your Name</label>
+                    <input type="text" id="name" name="name" required 
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 details">
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700">Your Email</label>
+                    <input type="email" id="email" name="email" required 
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 details">
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required 
+                        class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-400 details"></textarea>
+                </div>
+                <button type="submit" 
+                    class="w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600 transition">Send Message</button>
+            </form>
+        </div>
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center">
+            <img id="contact-image" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/18a1ed103914597.5f57a3e798f5d.gif" alt="Animated artwork of a person painting on a canvas" class="rounded-lg shadow-md">
+        </div>
+    </div>
+    <script>
+        const images = [
+            "https://mir-s3-cdn-cf.behance.net/project_modules/disp/18a1ed103914597.5f57a3e798f5d.gif",
+            "https://i.pinimg.com/originals/8a/f0/8a/8af08a3556c6e66f5ce88539183efd23.gif",
+            "https://mir-s3-cdn-cf.behance.net/project_modules/disp/cfdf2a87948865.5dc7ddb534d0e.gif"
+        ];
+        let currentImageIndex = 0;
+
+        $('.details').focus(function(){
+            $(this).css("background-color","#f5f5f5");
+        });
+
+        $('.details').blur(function(){
+            $(this).css("background-color","");
+        });
+
+        $('#myform').submit(function(event){
+            event.preventDefault();
+            alert("Form has been submitted");
+        });
+
+        $(document).keypress(function(event) {
+            if (event.key === 'c' || event.key === 'C') {
+                $('#contact-image').slideUp(500, function() {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    $('#contact-image').attr('src', images[currentImageIndex]);
+                    $('#contact-image').slideDown(500);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

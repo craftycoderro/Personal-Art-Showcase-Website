@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--this is a cdn link for tailwind css (popular utility first css framework)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--this is a cdn link for font awesome css file (popular icon libary)-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+</head>
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+    }
+
+    /* #welcome {
+            position: relative;
+        } */
+</style>
+
+<body>
+    <header>
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <a class="font-serif font-bold text-4xl text-orange-400">Artsy</a>
+            <nav class="flex items-center space-x-4">
+                <a class=" text-xl text-gray-600 nav-mem" href="#home">Home</a>
+                <a class=" text-xl text-gray-600 nav-mem" href="shop.html">Shop</a>
+                <a class=" text-xl text-gray-600 nav-mem" href="#about-us">About</a>
+                <a class=" text-xl text-gray-600 nav-mem" href="contact.html">Contact</a>
+                <a><i class="fas fa-shopping-cart nav-mem"></i></a>
+            </nav>
+        </div>
+    </header>
+    <div class="container flex justify-center" id="home">
+        <img id="welcome"
+            src="https://media.istockphoto.com/id/645958690/vector/colorful-welcome-word.jpg?s=612x612&w=0&k=20&c=rGsfKdr_ml8-K8c_2l-7vqmGYSt9Ls8OBFE0sBlOfR8="
+            alt="can't load">
+    </div>
+    <!--intro-->
+    <section class="py-6" id="shop">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <p class="text-3xl text-gray-800 font-bold">Discover Unique Handmade Goods</p>
+                <p class="py-3 text-xs text-gray-600">Find the perfect custom handmade wall decor, pen sketches,
+                    keychains, acrylic paints, watercolour paintings and more...</p>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <div class="grid lg:grid-cols-2 gap-4" id="intro-img">
+                    <div><img src="wall-decor.jpeg" style="width: 250px; height: 150px;"></div>
+                    <div><img src="watercolour.jpeg" style="width: 250px; height: 150px;"></div>
+                    <div><img src="keychain.webp" style="width: 250px; height: 150px;"></div>
+                    <div><img src="random7.jpeg" style="width: 250px; height: 150px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--featured section-->
+    <section class="py-6 bg-[#fdf2f4]">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl text-gray-800 font-bold mb-8" id="featured-product">Featured products</h3>
+            <div class="flex items-center">
+                <!-- Product Grid -->
+                <div class="grid lg:grid-cols-4 gap-8" id="content">
+                    <div class="bg-white shadow-md hover:shadow-2xl rounded-lg">
+                        <img class="par" id="product1" src="zenitsu.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 text-lg" id="prod-name1">Zenitsu</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-md hover:shadow-2xl">
+                        <img class="par" id="product2" src="collage.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 text-lg" id="prod-name2">Collage</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-md hover:shadow-2xl">
+                        <img class="par" id="product3" src="trio.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 text-lg" id="prod-name3">Chibbi JJK Trio</h3>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-md hover:shadow-2xl">
+                        <img class="par" id="product4" src="random.jpeg" alt="can't load" style="width: 300px; height:250px;">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-gray-800 text-lg" id="prod-name4">Couple Sketch</h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Round Arrow Button with Space -->
+                <a href="shop.html" class="ml-6 w-12 h-12 flex items-center justify-center bg-white text-[#0a192f] text-2xl rounded-full shadow-md hover:bg-gray-200 hover:shadow-lg transition duration-300">
+                    →
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--about us-->
+    <section class="py-6 bg-[#FFFBD8]">
+        <div class="container mx-auto px-4">
+            <h1 class="text-black text-center text-4xl py-12 font-serif" id="about-us">What is Artsy?</h1>
+            <p class="py-4 px-6 text-sm text-gray-900"><span>Artsy is a global marketplace for creative and one-of-a-kind
+                goods. It’s home to a universe of special, extraordinary items, from unique home decor pieces to trending fashion finds. Founded in 2005, Artsy
+                began its Indian journey in 2018.</span></p>
+            <p class="content-hide px-6 text-sm text-gray-900">Artsy is a place where creativity lives and thrives
+                because it’s powered by people just like you. 
+                We help our community of 5.9 million active sellers worldwide turn their ideas into
+                successful small businesses. Our platform connects them with 89.9 million active buyers looking for
+                something special that enables them to express their unique identity.</p>
+            <button class="px-3 bg-gray-200 text-black rounded-xl text-center ml-6 more">...</button>
+            <h3 class="text-blue-600 font-bold text-base py-4 px-6">Why choose Artsy?</h3>
+            <p class="py-2 px-6 text-sm text-gray-900">A community doing good
+                Artsy is where people come together to make, sell, buy, and collect unique items. We’re also a community
+                pushing for positive change for small businesses, people, and the planet. Here are some of the ways
+                we’re making a positive impact, together:</p>
+                <p class="content-hide px-6 text-sm text-gray-900"> 
+
+                Your purchases on Artsy in 2021 generated nearly $4 billion in income for small businesses.
+
+                We advocate for policy—at the global and local level—that benefits creative entrepreneurs and helps
+                small businesses grow and thrive.
+
+                We are deepening our commitment to a sustainable future and are working towards a new goal to reach net
+                zero emissions by 2030.
+
+                Support independent creators
+                There’s no Artsy warehouse—just millions of people selling the things they love. We make the whole
+                process easy, helping you connect directly with talented artisans from across the world (including
+                India) to find something extraordinary.
+
+                Peace of mind
+                With Artsy Purchase Protection, you can shop confidently, knowing if something goes wrong with your
+                order, we’ve got your back for all eligible purchases. If you ever need assistance, we are always ready
+                to step in for support.</p>
+                <button class="px-3 bg-gray-200 text-black rounded-xl text-center ml-6 more">...</button>
+
+        </div>
+    </section>
+
+    <!--subscribe section-->
+    <section class="py-6 bg-dark-blue-800" style="background-color: #b6d1fa;">
+        <div class="container mx-auto px-4">
+            <h1 class="text-gray-900 text-center text-3xl">Subscribe to our Newsletter</h1>
+            <h5 class="text-gray-900 text-center py-4">Get the latest updates on new products and upcoming sales</h5>
+            <div class="py-4 container flex justify-center gap-2">
+                <input type="text" placeholder="Enter your email id"
+                    class="text-center rounded-xl outline-none w-[250px] h-[40px]" id="input-email">
+                <button class="px-3 bg-white text-gray-900 text-#0a192f rounded-xl text-center" id="subscribe-btn">Subscribe</button>
+            </div>
+            <h2 class="py-4 text-2xl text-gray-900" id="thanku-note">Thank you for visiting our site. </h2>
+        </div>
+    </section>
+
+   <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8" style="background-color: #0464f5;">
+    <div class="container mx-auto px-4">
+     <div class="flex flex-col md:flex-row justify-between">
+      <div class="mb-6 md:mb-0">
+       <h3 class="text-xl font-bold mb-4">
+            Artsy
+       </h3>
+       <p class="text-white">
+        Discover unique handmade goods and vintage treasures from around the world.
+       </p>
+      </div>
+      <div class="flex space-x-8">
+       <div>
+        <h4 class="text-lg font-semibold mb-4">
+         Quick Links
+        </h4>
+        <ul>
+         <li>
+          <a class="text-white hover:text-white" href="#home">
+           Home
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="shop.html">
+           Shop
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="#about-us">
+           About
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="contact.html">
+           Contact
+          </a>
+         </li>
+        </ul>
+       </div>
+       <div>
+        <h4 class="text-lg font-semibold mb-4">
+         Follow Us
+        </h4>
+        <ul class="flex space-x-4">
+         <li>
+          <a class="text-white hover:text-white" href="#">
+           <i class="fab fa-facebook-f">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="#">
+           <i class="fab fa-twitter">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="#">
+           <i class="fab fa-instagram">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a class="text-white hover:text-white" href="#">
+           <i class="fab fa-pinterest">
+           </i>
+          </a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="text-center text-white mt-8">
+      © 2023 Artsy. All rights reserved.
+     </div>
+    </div>
+   </footer>
+
+
+    <!--click, slideToggle, hide,fadeIn, animate, fadeOut, val, append, prepend, attr, parent, css, blur, focus, fadeToggle-->
+    <script>
+        $(document).ready(function () {
+            $('#content').hide();
+
+            function introLoop() {
+                $('#intro-img').fadeOut(4000).fadeIn(3000, function () {
+                    setTimeout(introLoop, 1000);
+                });
+            }
+            introLoop();
+
+            $('#welcome').click(function () {
+                $('#welcome').animate({
+                    left: "400px",
+                    opacity: 0.5,
+                    height: "toggle"
+                }, 1500).animate({
+                    left: "50px",
+                    opacity: 1,
+                    height: "toggle"
+                }, 1500);
+            })
+
+            $('#featured-product').click(function () {
+                $('#content').slideToggle();
+            });
+
+            $('#subscribe-btn').click(function () {
+                let email = $("#input-email").val().trim();
+                let emailpattern = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
+                if (emailpattern.test(email)) {
+                    alert("subscribed with " + email);
+                    let img = $("<img>", {
+                        src: "https://mir-s3-cdn-cf.behance.net/project_modules/disp/b4c36d87948865.5dc7ddb45250e.gif",
+                        alt: "Thank you!",
+                        width: "70px",
+                        height: "75px"
+                    });
+                    $('#thanku-note').append(img).prepend('Hello, ' + email + ' ');
+                } else {
+                    alert("enter valid email");
+                }
+            });
+
+            let product1 = [
+                { img: "zenitsu.jpeg", name: "Zenitsu", price: "$25.00" },
+                { img: "shanks.jpeg", name: "Shanks", price: "$20.00" },
+                { img: "gojo6.jpeg", name: "Gojo", price: "$15.00" },
+                { img: "luffy.jpeg", name: "Luffy", price: "$10.00" }];
+
+            let cindex1 = 0;
+
+            $('#product1').click(function () {
+                cindex1 = (cindex1 + 1) % product1.length;
+                $(this).attr("src", product1[cindex1].img);
+                $('#prod-name1').text(product1[cindex1].name);
+                // $('#price1').text(product1[cindex1].price);
+            });
+
+            let product2 = [{ img: "collage.jpeg", name: "Collage", price: "$28.00" },
+            { img: "kenpachi.jpeg", name: "Kenpachi", price: "$12.00" },
+            { img: "bakugo.jpeg", name: "Bakugo", price: "$30.00" },
+            { img: "akaza.jpeg", name: "Akaza", price: "$16.00" }];
+
+            let cindex2 = 0;
+            $('#product2').click(function () {
+                cindex2 = (cindex2 + 1) % product2.length;
+                $(this).attr("src", product2[cindex2].img);
+                $('#prod-name2').text(product2[cindex2].name);
+                // $('#price2').text(product2[cindex2].price);
+            });
+
+            let product3 = [{ img: "trio.jpeg", name: "Chibbi jjk trio", price: "$30.00" },
+            { img: "grimjow.jpeg", name: "Grimjow", price: "$24.00" },
+            { img: "gojo5.jpeg", name: "Gojo", price: "$35.00" },
+            { img: "kenma.jpeg", name: "Kenma", price: "$15.00" },
+            { img: "gojo2.jpeg", name: "Gojo", price: "$25.00" }];
+
+            let cindex3 = 0;
+            $('#product3').click(function () {
+                cindex3 = (cindex3 + 1) % product3.length;
+                $(this).attr("src", product3[cindex3].img);
+                $('#prod-name3').text(product3[cindex3].name);
+                // $('#price3').text(product3[cindex3].price);
+            });
+
+            let product4 = [{ img: "random.jpeg", name: "Couple sketch", price: "$15.00" },
+            { img: "random7.jpeg", name: "Mother and child", price: "$18.00" },
+            { img: "random4.jpeg", name: "Couple sketch", price: "$12.00" },
+            { img: "random3.jpeg", name: "Girl sketch", price: "$10.00" },
+            { img: "random2.jpeg", name: "Boy sketch", price: "$14.00" },
+            { img: "random6.jpeg", name: "Couple sketch", price: "$5.00" },
+            ];
+            let cindex4 = 0;
+            $('#product4').click(function () {
+                cindex4 = (cindex4 + 1) % product4.length;
+                $(this).attr("src", product4[cindex4].img);
+                $('#prod-name4').text(product4[cindex4].name);
+                // $('#price4').text(product4[cindex4].price);
+            });
+
+
+            // $('.sel-parent').click(function () {
+            //     $(this).parent().css("border", "2px solid red")
+            // })
+
+
+            // let f_img = ["https://mir-s3-cdn-cf.behance.net/project_modules/disp/18a1ed103914597.5f57a3e798f5d.gif",
+            //     "https://i.pinimg.com/originals/8a/f0/8a/8af08a3556c6e66f5ce88539183efd23.gif",
+            //     "https://mir-s3-cdn-cf.behance.net/project_modules/disp/cfdf2a87948865.5dc7ddb534d0e.gif"
+            // ];
+            // let index = 0;
+
+            // $('#feedback-img').dblclick(function () {
+            //     $(this).slideUp(500, function () {
+            //         index = (index + 1) % f_img.length;
+            //         $(this).attr("src", f_img[index]).slideDown(500);
+            //     });
+            // });
+
+            $('.nav-mem').mouseenter(function () {
+                $(this).addClass("text-red-500");
+            }).mouseleave(function () {
+                $(this).removeClass("text-red-500");
+            });
+
+
+            // $('#feedback-content').hide();
+
+            // $('#feedback').click(function () {
+            //     $('#feedback-content').fadeToggle(1000);
+            // });
+
+            $('.content-hide').hide();
+            $('.more').click(function () {
+                $(this).prev('.content-hide').toggle();
+            });
+
+        });
+
+    </script>
+</body>
+</html>
